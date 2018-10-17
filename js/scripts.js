@@ -25,7 +25,6 @@ $(document).ready(function() {
   $("form#details").submit(function(event) {
     event.preventDefault();
     $("#output").text("Your appointment was booked!");
-
   });
 
 });
