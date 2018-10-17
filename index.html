@@ -10,34 +10,37 @@
   </head>
   <body>
     <h1>Book your appointment today!</h1>
-    <button id="modalbutton" type="button">Book appointment</button>
+    <button id="modal-button" type="button">Book appointment</button>
 
-    <div id="appointmentmodal" class="modal">
-      <form id="details">
-        <div class="form-group">
-          <label for="name"></label>
-          <input id="name" class="form-control" type="text">
-        </div>
+    <div id="appointment-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="details">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
 
-        <div class="form-group">
-          <label for="description"></label>
-          <input id="description" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="description">Description of appointment:</label>
+            <input id="description" class="form-control" type="text">
+          </div>
 
-        <div class="form-group">
-          <label for="date"></label>
-          <input id="date" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input id="date" class="form-control" type="text">
+          </div>
 
-        <div class="form-group">
-          <label for="time"></label>
-          <input id="time" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input id="time" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Schedule</button>
+        </form>
+        
+        <div id="output"></div>
 
-      </form>
-
-
+      </div>
     </div>
-
   </body>
 </html>
